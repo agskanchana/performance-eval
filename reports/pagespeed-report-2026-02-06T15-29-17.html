@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageSpeed Insights Report - 2/6/2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1em;
+        }
+        
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .summary-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .summary-card h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        .summary-card .number {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        
+        .results-table-container {
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+        
+        thead {
+            background: #333;
+            color: white;
+        }
+        
+        th {
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .url-cell {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .score {
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            min-width: 45px;
+            text-align: center;
+        }
+        
+        .score-good {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .score-average {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .score-poor {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .status-pass {
+            color: #28a745;
+            font-weight: 600;
+        }
+        
+        .status-fail {
+            color: #dc3545;
+            font-weight: 600;
+        }
+        
+        .metric-value {
+            font-size: 12px;
+        }
+        
+        .metric-good {
+            color: #28a745;
+            font-weight: 600;
+        }
+        
+        .metric-needs-improvement {
+            color: #ffc107;
+            font-weight: 600;
+        }
+        
+        .metric-poor {
+            color: #dc3545;
+            font-weight: 600;
+        }
+        
+        .device-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+        
+        .device-mobile {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .device-desktop {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+        
+        .report-info {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .report-info p {
+            margin: 5px 0;
+            color: #333;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 PageSpeed Insights Report</h1>
+        <p class="subtitle">Comprehensive performance analysis for all pages</p>
+        
+        <div class="report-info">
+            <p><strong>Generated:</strong> 2/6/2026, 8:59:17 PM</p>
+            <p><strong>Total URLs Analyzed:</strong> 56</p>
+            <p><strong>Total Tests:</strong> 112 (Mobile + Desktop)</p>
+        </div>
+        
+        <div class="summary-cards">
+            <div class="summary-card">
+                <h3>Total URLs</h3>
+                <div class="number">56</div>
+            </div>
+            <div class="summary-card">
+                <h3>Passed</h3>
+                <div class="number">98</div>
+            </div>
+            <div class="summary-card">
+                <h3>Failed</h3>
+                <div class="number">14</div>
+            </div>
+            <div class="summary-card">
+                <h3>Success Rate</h3>
+                <div class="number">88%</div>
+            </div>
+        </div>
+        
+        <h2>Detailed Results</h2>
+        
+        <div class="results-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>URL</th>
+                        <th>Device</th>
+                        <th>Performance</th>
+                        <th>Accessibility</th>
+                        <th>Best Practices</th>
+                        <th>SEO</th>
+                        <th>FCP</th>
+                        <th>LCP</th>
+                        <th>CLS</th>
+                        <th>Status</th>
+                        <th>Issues</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-average">87</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-needs-improvement">3.35s</span></td>
+                        <td><span class="metric-value metric-good">0.026</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">Performance: 87 (required: ≥90); LCP: 3.35s (required: ≤2.5s)</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">98</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">96</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.79s</span></td>
+                        <td><span class="metric-value metric-good">0.003</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/reviews/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Freviews%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/reviews/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-average">54</span></td>
+                        <td><span class="score score-poor">93</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.92s</span></td>
+                        <td><span class="metric-value metric-poor">13.21s</span></td>
+                        <td><span class="metric-value metric-needs-improvement">0.238</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">Performance: 54 (required: ≥90); LCP: 13.21s (required: ≤2.5s); CLS: 0.238 (required: ≤0.1); Accessibility: 93 (required: 100)</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/reviews/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Freviews%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/reviews/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-average">52</span></td>
+                        <td><span class="score score-poor">97</span></td>
+                        <td><span class="score score-good">96</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-needs-improvement">3.43s</span></td>
+                        <td><span class="metric-value metric-needs-improvement">0.207</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">Performance: 52 (required: ≥90); LCP: 3.43s (required: ≤2.5s); CLS: 0.207 (required: ≤0.1); Accessibility: 97 (required: 100)</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/shop/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fshop%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/shop/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-average">86</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">96</span></td>
+                        <td><span class="score score-poor">92</span></td>
+                        <td><span class="metric-value metric-good">0.97s</span></td>
+                        <td><span class="metric-value metric-poor">3.99s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">Performance: 86 (required: ≥90); LCP: 3.99s (required: ≤2.5s); SEO: 92 (required: 100)</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/shop/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fshop%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/shop/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">96</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">96</span></td>
+                        <td><span class="score score-poor">92</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">1.22s</span></td>
+                        <td><span class="metric-value metric-good">0.005</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">SEO: 92 (required: 100)</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/site-map/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fsite-map%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/site-map/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-average">78</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.93s</span></td>
+                        <td><span class="metric-value metric-good">2.1s</span></td>
+                        <td><span class="metric-value metric-poor">0.422</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">Performance: 78 (required: ≥90); CLS: 0.422 (required: ≤0.1)</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/site-map/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fsite-map%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/site-map/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-average">81</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.46s</span></td>
+                        <td><span class="metric-value metric-poor">0.362</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">Performance: 81 (required: ≥90); CLS: 0.362 (required: ≤0.1)</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/patient-forms/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fpatient-forms%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/patient-forms/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.92s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/patient-forms/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fpatient-forms%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/patient-forms/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.38s</span></td>
+                        <td><span class="metric-value metric-good">0.006</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/nouvaderm/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fnouvaderm%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/nouvaderm/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/nouvaderm/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fnouvaderm%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/nouvaderm/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.29s</span></td>
+                        <td><span class="metric-value metric-good">0.77s</span></td>
+                        <td><span class="metric-value metric-good">0.008</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/biorepeel/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbiorepeel%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/biorepeel/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.58s</span></td>
+                        <td><span class="metric-value metric-good">0.032</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/biorepeel/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbiorepeel%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/biorepeel/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.42s</span></td>
+                        <td><span class="metric-value metric-good">0.029</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/chemical-peel/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fchemical-peel%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/chemical-peel/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.35s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/chemical-peel/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fchemical-peel%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/chemical-peel/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.68s</span></td>
+                        <td><span class="metric-value metric-good">0.008</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/custom-facial/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcustom-facial%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/custom-facial/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.5s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/custom-facial/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcustom-facial%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/custom-facial/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.74s</span></td>
+                        <td><span class="metric-value metric-good">0.01</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/dermaplaning/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fdermaplaning%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/dermaplaning/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/dermaplaning/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fdermaplaning%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/dermaplaning/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.36s</span></td>
+                        <td><span class="metric-value metric-good">0.008</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/dysport/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fdysport%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/dysport/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.07s</span></td>
+                        <td><span class="metric-value metric-good">1.09s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/dysport/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fdysport%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/dysport/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.32s</span></td>
+                        <td><span class="metric-value metric-good">0.72s</span></td>
+                        <td><span class="metric-value metric-good">0.011</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/xeomin/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fxeomin%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/xeomin/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.034</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/xeomin/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fxeomin%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/xeomin/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">98</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.42s</span></td>
+                        <td><span class="metric-value metric-good">0.005</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/rf-microneedling/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Frf-microneedling%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/rf-microneedling/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.94s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/rf-microneedling/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Frf-microneedling%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/rf-microneedling/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.34s</span></td>
+                        <td><span class="metric-value metric-good">0.008</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/emface/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Femface%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/emface/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.94s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/emface/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Femface%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/emface/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.34s</span></td>
+                        <td><span class="metric-value metric-good">0.012</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/exion-face/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fexion-face%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/exion-face/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.08s</span></td>
+                        <td><span class="metric-value metric-good">1.08s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/exion-face/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fexion-face%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/exion-face/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.3s</span></td>
+                        <td><span class="metric-value metric-good">0.73s</span></td>
+                        <td><span class="metric-value metric-good">0.008</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/hydrafacial/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhydrafacial%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/hydrafacial/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.95s</span></td>
+                        <td><span class="metric-value metric-good">1.35s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/hydrafacial/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhydrafacial%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/hydrafacial/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.7s</span></td>
+                        <td><span class="metric-value metric-good">0.022</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/aquafirme/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Faquafirme%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/aquafirme/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/aquafirme/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Faquafirme%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/aquafirme/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.67s</span></td>
+                        <td><span class="metric-value metric-good">0.019</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/hyperhidrosis-treatment/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhyperhidrosis-treatment%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/hyperhidrosis-treatment/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">98</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.07s</span></td>
+                        <td><span class="metric-value metric-good">1.81s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/hyperhidrosis-treatment/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhyperhidrosis-treatment%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/hyperhidrosis-treatment/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.32s</span></td>
+                        <td><span class="metric-value metric-good">0.49s</span></td>
+                        <td><span class="metric-value metric-good">0.003</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/geneo-facial/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fgeneo-facial%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/geneo-facial/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.13s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/geneo-facial/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fgeneo-facial%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/geneo-facial/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.71s</span></td>
+                        <td><span class="metric-value metric-good">0.012</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/botox/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbotox%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/botox/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.93s</span></td>
+                        <td><span class="metric-value metric-good">1.35s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/botox/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbotox%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/botox/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.3s</span></td>
+                        <td><span class="metric-value metric-good">0.033</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/dermal-fillers/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fdermal-fillers%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/dermal-fillers/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.032</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/dermal-fillers/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fdermal-fillers%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/dermal-fillers/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.72s</span></td>
+                        <td><span class="metric-value metric-good">0.029</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/kybella/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fkybella%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/kybella/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/kybella/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fkybella%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/kybella/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.3s</span></td>
+                        <td><span class="metric-value metric-good">0.38s</span></td>
+                        <td><span class="metric-value metric-good">0.042</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/prp-eyes-and-face/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fprp-eyes-and-face%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/prp-eyes-and-face/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/prp-eyes-and-face/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fprp-eyes-and-face%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/prp-eyes-and-face/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.29s</span></td>
+                        <td><span class="metric-value metric-good">0.46s</span></td>
+                        <td><span class="metric-value metric-good">0.007</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/picosure-pro/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fpicosure-pro%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/picosure-pro/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.12s</span></td>
+                        <td><span class="metric-value metric-good">1.13s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/picosure-pro/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fpicosure-pro%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/picosure-pro/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.32s</span></td>
+                        <td><span class="metric-value metric-good">0.49s</span></td>
+                        <td><span class="metric-value metric-good">0.006</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/laser-hair-removal/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Flaser-hair-removal%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/laser-hair-removal/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/laser-hair-removal/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Flaser-hair-removal%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/laser-hair-removal/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.46s</span></td>
+                        <td><span class="metric-value metric-good">0.027</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/tattoo-removal/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Ftattoo-removal%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/tattoo-removal/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.03</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/tattoo-removal/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Ftattoo-removal%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/tattoo-removal/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.38s</span></td>
+                        <td><span class="metric-value metric-good">0.041</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/coolsculpting/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcoolsculpting%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/coolsculpting/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.93s</span></td>
+                        <td><span class="metric-value metric-good">1.35s</span></td>
+                        <td><span class="metric-value metric-good">0.03</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/coolsculpting/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcoolsculpting%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/coolsculpting/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.38s</span></td>
+                        <td><span class="metric-value metric-good">0.02</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/emsella/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Femsella%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/emsella/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-poor">0</span></td>
+                        <td><span class="score score-poor">0</span></td>
+                        <td><span class="score score-poor">0</span></td>
+                        <td><span class="score score-poor">0</span></td>
+                        <td><span class="metric-value metric-poor">N/As</span></td>
+                        <td><span class="metric-value metric-poor">N/As</span></td>
+                        <td><span class="metric-value metric-poor">N/A</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">API Error: Lighthouse returned error: Something went wrong.</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/emsella/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Femsella%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/emsella/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">96</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.72s</span></td>
+                        <td><span class="metric-value metric-good">0.042</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/emtone/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Femtone%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/emtone/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.048</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/emtone/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Femtone%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/emtone/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.71s</span></td>
+                        <td><span class="metric-value metric-good">0.042</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/exion-body/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fexion-body%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/exion-body/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.07s</span></td>
+                        <td><span class="metric-value metric-good">1.8s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/exion-body/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fexion-body%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/exion-body/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.34s</span></td>
+                        <td><span class="metric-value metric-good">0.49s</span></td>
+                        <td><span class="metric-value metric-good">0.013</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/thermi250/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fthermi250%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/thermi250/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.036</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/thermi250/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fthermi250%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/thermi250/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.42s</span></td>
+                        <td><span class="metric-value metric-good">0.009</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/sculptra/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fsculptra%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/sculptra/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.028</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/sculptra/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fsculptra%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/sculptra/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.65s</span></td>
+                        <td><span class="metric-value metric-good">0.011</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/bbl-skintyte/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbbl-skintyte%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/bbl-skintyte/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/bbl-skintyte/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbbl-skintyte%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/bbl-skintyte/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.7s</span></td>
+                        <td><span class="metric-value metric-good">0.042</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/forever-bare-bbl/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fforever-bare-bbl%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/forever-bare-bbl/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.031</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/forever-bare-bbl/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fforever-bare-bbl%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/forever-bare-bbl/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.75s</span></td>
+                        <td><span class="metric-value metric-good">0.007</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/forever-clear-bbl/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fforever-clear-bbl%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/forever-clear-bbl/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.055</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/forever-clear-bbl/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fforever-clear-bbl%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/forever-clear-bbl/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.42s</span></td>
+                        <td><span class="metric-value metric-good">0.016</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/forever-young-bbl/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fforever-young-bbl%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/forever-young-bbl/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.037</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/forever-young-bbl/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fforever-young-bbl%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/forever-young-bbl/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.7s</span></td>
+                        <td><span class="metric-value metric-good">0.009</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/halo-laser/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhalo-laser%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/halo-laser/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.07s</span></td>
+                        <td><span class="metric-value metric-good">1.8s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/halo-laser/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhalo-laser%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/halo-laser/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.33s</span></td>
+                        <td><span class="metric-value metric-good">0.78s</span></td>
+                        <td><span class="metric-value metric-good">0.013</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/ultherapy/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fultherapy%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/ultherapy/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.07s</span></td>
+                        <td><span class="metric-value metric-good">1.13s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/ultherapy/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fultherapy%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/ultherapy/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.33s</span></td>
+                        <td><span class="metric-value metric-good">0.74s</span></td>
+                        <td><span class="metric-value metric-good">0.014</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/latisse/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Flatisse%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/latisse/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">98</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.13s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/latisse/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Flatisse%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/latisse/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.81s</span></td>
+                        <td><span class="metric-value metric-good">0.023</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/waxing/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fwaxing%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/waxing/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.032</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/waxing/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fwaxing%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/waxing/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">98</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.3s</span></td>
+                        <td><span class="metric-value metric-good">0.74s</span></td>
+                        <td><span class="metric-value metric-good">0.018</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/skincare-products/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fskincare-products%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/skincare-products/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.064</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/skincare-products/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fskincare-products%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/skincare-products/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.34s</span></td>
+                        <td><span class="metric-value metric-good">0.011</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/breast-cancer-surgery/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbreast-cancer-surgery%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/breast-cancer-surgery/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/breast-cancer-surgery/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbreast-cancer-surgery%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/breast-cancer-surgery/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-average">84</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.42s</span></td>
+                        <td><span class="metric-value metric-poor">0.322</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">Performance: 84 (required: ≥90); CLS: 0.322 (required: ≤0.1)</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/wound-care/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fwound-care%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/wound-care/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.94s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.04</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/wound-care/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fwound-care%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/wound-care/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.3s</span></td>
+                        <td><span class="metric-value metric-good">0.5s</span></td>
+                        <td><span class="metric-value metric-good">0.007</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/skin-graft/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fskin-graft%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/skin-graft/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.95s</span></td>
+                        <td><span class="metric-value metric-good">1.35s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/skin-graft/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fskin-graft%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/skin-graft/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.3s</span></td>
+                        <td><span class="metric-value metric-good">0.46s</span></td>
+                        <td><span class="metric-value metric-good">0.008</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/tumor-removal/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Ftumor-removal%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/tumor-removal/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.95s</span></td>
+                        <td><span class="metric-value metric-good">1.35s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/tumor-removal/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Ftumor-removal%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/tumor-removal/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.42s</span></td>
+                        <td><span class="metric-value metric-good">0.006</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/gallbladder-removal/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fgallbladder-removal%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/gallbladder-removal/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.034</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/gallbladder-removal/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fgallbladder-removal%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/gallbladder-removal/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.38s</span></td>
+                        <td><span class="metric-value metric-good">0.008</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/hernia-repair/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhernia-repair%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/hernia-repair/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.93s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.032</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/hernia-repair/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhernia-repair%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/hernia-repair/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.68s</span></td>
+                        <td><span class="metric-value metric-good">0.009</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/appendix-removal/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fappendix-removal%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/appendix-removal/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">96</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.73s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/appendix-removal/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fappendix-removal%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/appendix-removal/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.29s</span></td>
+                        <td><span class="metric-value metric-good">0.42s</span></td>
+                        <td><span class="metric-value metric-good">0.008</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/colon-repair/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcolon-repair%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/colon-repair/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/colon-repair/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcolon-repair%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/colon-repair/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.69s</span></td>
+                        <td><span class="metric-value metric-good">0.01</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/small-bowel-resection/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fsmall-bowel-resection%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/small-bowel-resection/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.93s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-good">0.048</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/small-bowel-resection/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fsmall-bowel-resection%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/small-bowel-resection/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">0.65s</span></td>
+                        <td><span class="metric-value metric-good">0.008</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/about/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fabout%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/about/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.94s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/about/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fabout%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/about/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">97</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">1.2s</span></td>
+                        <td><span class="metric-value metric-good">0.006</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/meet-the-doctor/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fmeet-the-doctor%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/meet-the-doctor/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">95</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.92s</span></td>
+                        <td><span class="metric-value metric-needs-improvement">2.79s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">LCP: 2.79s (required: ≤2.5s)</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/meet-the-doctor/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fmeet-the-doctor%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/meet-the-doctor/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">97</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">1.11s</span></td>
+                        <td><span class="metric-value metric-good">0.005</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/financing-options/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Ffinancing-options%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/financing-options/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-average">58</span></td>
+                        <td><span class="score score-poor">97</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.94s</span></td>
+                        <td><span class="metric-value metric-poor">4s</span></td>
+                        <td><span class="metric-value metric-poor">0.523</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">Performance: 58 (required: ≥90); LCP: 4.00s (required: ≤2.5s); CLS: 0.523 (required: ≤0.1); Accessibility: 97 (required: 100)</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/financing-options/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Ffinancing-options%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/financing-options/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-average">69</span></td>
+                        <td><span class="score score-poor">97</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.28s</span></td>
+                        <td><span class="metric-value metric-good">1.4s</span></td>
+                        <td><span class="metric-value metric-needs-improvement">0.142</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">Performance: 69 (required: ≥90); CLS: 0.142 (required: ≤0.1); Accessibility: 97 (required: 100)</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/contact-us/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcontact-us%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/contact-us/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">1.05s</span></td>
+                        <td><span class="metric-value metric-good">1.36s</span></td>
+                        <td><span class="metric-value metric-good">0.024</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/contact-us/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcontact-us%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/contact-us/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.33s</span></td>
+                        <td><span class="metric-value metric-good">0.38s</span></td>
+                        <td><span class="metric-value metric-good">0.012</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/emsculpt-neo/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Femsculpt-neo%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/emsculpt-neo/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">99</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.93s</span></td>
+                        <td><span class="metric-value metric-good">1.43s</span></td>
+                        <td><span class="metric-value metric-good">0.041</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="">
+                        <td class="url-cell" title="https://www.drsusanseman.com/emsculpt-neo/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Femsculpt-neo%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/emsculpt-neo/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="metric-value metric-good">0.29s</span></td>
+                        <td><span class="metric-value metric-good">0.38s</span></td>
+                        <td><span class="metric-value metric-good">0.029</span></td>
+                        <td><span class="status-pass">PASS</span></td>
+                        <td class="metric-value">All checks passed</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/bbl-heroic/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbbl-heroic%2F&form_factor=mobile" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/bbl-heroic/</a></td>
+                        <td><span class="device-badge device-mobile">mobile</span></td>
+                        <td><span class="score score-good">90</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-poor">92</span></td>
+                        <td><span class="metric-value metric-good">0.95s</span></td>
+                        <td><span class="metric-value metric-good">1.28s</span></td>
+                        <td><span class="metric-value metric-needs-improvement">0.117</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">CLS: 0.117 (required: ≤0.1); SEO: 92 (required: 100)</td>
+                    </tr>
+                    <tr style="background: #fff5f5;">
+                        <td class="url-cell" title="https://www.drsusanseman.com/bbl-heroic/"><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbbl-heroic%2F&form_factor=desktop" target="_blank" style="color: #667eea; text-decoration: none;">https://www.drsusanseman.com/bbl-heroic/</a></td>
+                        <td><span class="device-badge device-desktop">desktop</span></td>
+                        <td><span class="score score-average">85</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-good">100</span></td>
+                        <td><span class="score score-poor">92</span></td>
+                        <td><span class="metric-value metric-good">0.29s</span></td>
+                        <td><span class="metric-value metric-good">0.77s</span></td>
+                        <td><span class="metric-value metric-needs-improvement">0.19</span></td>
+                        <td><span class="status-fail">FAIL</span></td>
+                        <td class="metric-value">Performance: 85 (required: ≥90); CLS: 0.190 (required: ≤0.1); SEO: 92 (required: 100)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <h3 style="margin-bottom: 10px;">Scoring Criteria</h3>
+            <ul style="line-height: 1.8; color: #666;">
+                <li><strong>Performance:</strong> Must be ≥90 (Good: Green, Average: Yellow, Poor: Red)</li>
+                <li><strong>Accessibility:</strong> Must be 100 (Pass: Green, Fail: Red)</li>
+                <li><strong>SEO:</strong> Must be 100 (Pass: Green, Fail: Red)</li>
+                <li><strong>FCP (First Contentful Paint):</strong> Must be ≤1.8s (Good: Green, Needs Improvement: Yellow, Poor: Red)</li>
+                <li><strong>LCP (Largest Contentful Paint):</strong> Must be ≤2.5s (Good: Green, Needs Improvement: Yellow, Poor: Red)</li>
+                <li><strong>CLS (Cumulative Layout Shift):</strong> Must be ≤0.1 (Good: Green, Needs Improvement: Yellow, Poor: Red)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
