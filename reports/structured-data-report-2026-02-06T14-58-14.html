@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured Data Test Report - 2/6/2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 30px; }
+        h1 { color: #333; margin-bottom: 10px; }
+        .subtitle { color: #666; margin-bottom: 30px; }
+        .summary-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 30px; }
+        .summary-card { padding: 20px; border-radius: 8px; text-align: center; color: white; }
+        .summary-card.total { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .summary-card.passed { background: #28a745; }
+        .summary-card.failed { background: #dc3545; }
+        .summary-card.pending { background: #6c757d; }
+        .summary-card h3 { font-size: 14px; margin-bottom: 8px; opacity: 0.9; }
+        .summary-card .number { font-size: 32px; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 13px; }
+        thead { background: #333; color: white; }
+        th { padding: 12px 8px; text-align: left; font-weight: 600; }
+        td { padding: 12px 8px; border-bottom: 1px solid #e9ecef; }
+        tbody tr:hover { background: #f8f9fa; }
+        .url-cell { max-width: 400px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .url-cell a { color: #1a0dab; text-decoration: none; }
+        .url-cell a:hover { text-decoration: underline; }
+        td a { color: #1a73e8; text-decoration: none; }
+        td a:hover { text-decoration: underline; }
+        .status-pass { color: #28a745; font-weight: 600; }
+        .status-fail { color: #dc3545; font-weight: 600; }
+        .status-pending { color: #6c757d; font-weight: 600; }
+        .report-info { background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        .report-info p { margin: 5px 0; color: #666; }
+        @media print { body { background: white; padding: 0; } .container { box-shadow: none; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Structured Data Test Report</h1>
+        <p class="subtitle">Google Rich Results Test Analysis</p>
+        
+        <div class="report-info">
+            <p><strong>Sitemap:</strong> https://www.drsusanseman.com/page-sitemap.xml</p>
+            <p><strong>Generated:</strong> 2/6/2026, 8:28:14 PM</p>
+            <p><strong>Total URLs Analyzed:</strong> 56</p>
+        </div>
+        
+        <div class="summary-cards">
+            <div class="summary-card total">
+                <h3>Total URLs</h3>
+                <div class="number">56</div>
+            </div>
+            <div class="summary-card passed">
+                <h3>Passed</h3>
+                <div class="number">49</div>
+            </div>
+            <div class="summary-card failed">
+                <h3>Failed</h3>
+                <div class="number">7</div>
+            </div>
+            <div class="summary-card pending">
+                <h3>Pending</h3>
+                <div class="number">0</div>
+            </div>
+        </div>
+        
+        <h2>Detailed Results</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>URL</th>
+                    <th>Google Test</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr>
+                        <td>1</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/" target="_blank">https://www.drsusanseman.com/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>2</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/reviews/" target="_blank">https://www.drsusanseman.com/reviews/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Freviews%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>3</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/shop/" target="_blank">https://www.drsusanseman.com/shop/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fshop%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>4</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/site-map/" target="_blank">https://www.drsusanseman.com/site-map/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fsite-map%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>5</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/patient-forms/" target="_blank">https://www.drsusanseman.com/patient-forms/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fpatient-forms%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>6</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/nouvaderm/" target="_blank">https://www.drsusanseman.com/nouvaderm/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fnouvaderm%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>7</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/biorepeel/" target="_blank">https://www.drsusanseman.com/biorepeel/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbiorepeel%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>8</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/chemical-peel/" target="_blank">https://www.drsusanseman.com/chemical-peel/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fchemical-peel%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>9</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/custom-facial/" target="_blank">https://www.drsusanseman.com/custom-facial/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcustom-facial%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>10</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/dermaplaning/" target="_blank">https://www.drsusanseman.com/dermaplaning/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fdermaplaning%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>11</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/dysport/" target="_blank">https://www.drsusanseman.com/dysport/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fdysport%2F" target="_blank">Test Link</a></td>
+                        <td class="status-fail">✗ FAIL</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>12</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/xeomin/" target="_blank">https://www.drsusanseman.com/xeomin/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fxeomin%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>13</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/rf-microneedling/" target="_blank">https://www.drsusanseman.com/rf-microneedling/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Frf-microneedling%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>14</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/emface/" target="_blank">https://www.drsusanseman.com/emface/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Femface%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>15</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/exion-face/" target="_blank">https://www.drsusanseman.com/exion-face/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fexion-face%2F" target="_blank">Test Link</a></td>
+                        <td class="status-fail">✗ FAIL</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>16</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/hydrafacial/" target="_blank">https://www.drsusanseman.com/hydrafacial/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhydrafacial%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>17</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/aquafirme/" target="_blank">https://www.drsusanseman.com/aquafirme/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Faquafirme%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>18</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/hyperhidrosis-treatment/" target="_blank">https://www.drsusanseman.com/hyperhidrosis-treatment/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhyperhidrosis-treatment%2F" target="_blank">Test Link</a></td>
+                        <td class="status-fail">✗ FAIL</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>19</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/geneo-facial/" target="_blank">https://www.drsusanseman.com/geneo-facial/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fgeneo-facial%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>20</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/botox/" target="_blank">https://www.drsusanseman.com/botox/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbotox%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>21</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/dermal-fillers/" target="_blank">https://www.drsusanseman.com/dermal-fillers/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fdermal-fillers%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>22</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/kybella/" target="_blank">https://www.drsusanseman.com/kybella/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fkybella%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>23</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/prp-eyes-and-face/" target="_blank">https://www.drsusanseman.com/prp-eyes-and-face/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fprp-eyes-and-face%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>24</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/picosure-pro/" target="_blank">https://www.drsusanseman.com/picosure-pro/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fpicosure-pro%2F" target="_blank">Test Link</a></td>
+                        <td class="status-fail">✗ FAIL</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>25</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/laser-hair-removal/" target="_blank">https://www.drsusanseman.com/laser-hair-removal/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Flaser-hair-removal%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>26</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/tattoo-removal/" target="_blank">https://www.drsusanseman.com/tattoo-removal/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Ftattoo-removal%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>27</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/coolsculpting/" target="_blank">https://www.drsusanseman.com/coolsculpting/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcoolsculpting%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>28</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/emsella/" target="_blank">https://www.drsusanseman.com/emsella/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Femsella%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>29</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/emtone/" target="_blank">https://www.drsusanseman.com/emtone/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Femtone%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>30</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/exion-body/" target="_blank">https://www.drsusanseman.com/exion-body/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fexion-body%2F" target="_blank">Test Link</a></td>
+                        <td class="status-fail">✗ FAIL</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>31</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/thermi250/" target="_blank">https://www.drsusanseman.com/thermi250/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fthermi250%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>32</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/sculptra/" target="_blank">https://www.drsusanseman.com/sculptra/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fsculptra%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>33</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/bbl-skintyte/" target="_blank">https://www.drsusanseman.com/bbl-skintyte/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbbl-skintyte%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>34</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/forever-bare-bbl/" target="_blank">https://www.drsusanseman.com/forever-bare-bbl/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fforever-bare-bbl%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>35</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/forever-clear-bbl/" target="_blank">https://www.drsusanseman.com/forever-clear-bbl/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fforever-clear-bbl%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>36</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/forever-young-bbl/" target="_blank">https://www.drsusanseman.com/forever-young-bbl/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fforever-young-bbl%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>37</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/halo-laser/" target="_blank">https://www.drsusanseman.com/halo-laser/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhalo-laser%2F" target="_blank">Test Link</a></td>
+                        <td class="status-fail">✗ FAIL</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>38</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/ultherapy/" target="_blank">https://www.drsusanseman.com/ultherapy/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fultherapy%2F" target="_blank">Test Link</a></td>
+                        <td class="status-fail">✗ FAIL</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>39</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/latisse/" target="_blank">https://www.drsusanseman.com/latisse/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Flatisse%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>40</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/waxing/" target="_blank">https://www.drsusanseman.com/waxing/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fwaxing%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>41</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/skincare-products/" target="_blank">https://www.drsusanseman.com/skincare-products/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fskincare-products%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>42</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/breast-cancer-surgery/" target="_blank">https://www.drsusanseman.com/breast-cancer-surgery/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbreast-cancer-surgery%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>43</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/wound-care/" target="_blank">https://www.drsusanseman.com/wound-care/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fwound-care%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>44</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/skin-graft/" target="_blank">https://www.drsusanseman.com/skin-graft/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fskin-graft%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>45</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/tumor-removal/" target="_blank">https://www.drsusanseman.com/tumor-removal/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Ftumor-removal%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>46</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/gallbladder-removal/" target="_blank">https://www.drsusanseman.com/gallbladder-removal/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fgallbladder-removal%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>47</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/hernia-repair/" target="_blank">https://www.drsusanseman.com/hernia-repair/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fhernia-repair%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>48</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/appendix-removal/" target="_blank">https://www.drsusanseman.com/appendix-removal/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fappendix-removal%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>49</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/colon-repair/" target="_blank">https://www.drsusanseman.com/colon-repair/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcolon-repair%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>50</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/small-bowel-resection/" target="_blank">https://www.drsusanseman.com/small-bowel-resection/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fsmall-bowel-resection%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>51</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/about/" target="_blank">https://www.drsusanseman.com/about/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fabout%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>52</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/meet-the-doctor/" target="_blank">https://www.drsusanseman.com/meet-the-doctor/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fmeet-the-doctor%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>53</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/financing-options/" target="_blank">https://www.drsusanseman.com/financing-options/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Ffinancing-options%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>54</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/contact-us/" target="_blank">https://www.drsusanseman.com/contact-us/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fcontact-us%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>55</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/emsculpt-neo/" target="_blank">https://www.drsusanseman.com/emsculpt-neo/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Femsculpt-neo%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>56</td>
+                        <td class="url-cell"><a href="https://www.drsusanseman.com/bbl-heroic/" target="_blank">https://www.drsusanseman.com/bbl-heroic/</a></td>
+                        <td><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fwww.drsusanseman.com%2Fbbl-heroic%2F" target="_blank">Test Link</a></td>
+                        <td class="status-pass">✓ PASS</td>
+                        <td></td>
+                    </tr>
+                
+            </tbody>
+        </table>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <h3>Legend</h3>
+            <p style="margin-top: 10px;">
+                <span class="status-pass">✓ PASS</span> - Structured data is valid<br>
+                <span class="status-fail">✗ FAIL</span> - Structured data has errors<br>
+                <span class="status-pending">⏳ PENDING</span> - Not yet tested
+            </p>
+        </div>
+    </div>
+</body>
+</html>
