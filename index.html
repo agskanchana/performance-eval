@@ -359,6 +359,40 @@
             background: #f3e5f5;
             color: #7b1fa2;
         }
+
+        .btn-recheck {
+            padding: 4px 10px;
+            font-size: 11px;
+            font-weight: 600;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background: #fd7e14;
+            color: white;
+            transition: background 0.2s, opacity 0.2s;
+            white-space: nowrap;
+        }
+
+        .btn-recheck:hover:not(:disabled) {
+            background: #e8690b;
+        }
+
+        .btn-recheck:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .recheck-spinner {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 2px solid rgba(255,255,255,.4);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 0.8s linear infinite;
+            vertical-align: middle;
+            margin-right: 3px;
+        }
     </style>
 </head>
 <body>
@@ -476,6 +510,7 @@
                             <th>CLS</th>
                             <th>Status</th>
                             <th>Issues</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody id="resultsBody">
@@ -791,8 +826,9 @@
             // Clear and populate table
             resultsBody.innerHTML = '';
             
-            analysisResults.forEach(result => {
+            analysisResults.forEach((result, index) => {
                 const row = document.createElement('tr');
+                row.id = `result-row-${index}`;
                 if (result.status === 'FAIL') {
                     row.style.background = '#fff5f5';
                 }
@@ -811,10 +847,42 @@
                     <td><span class="${getMetricClass(result.cls, 0.1)}">${result.cls}</span></td>
                     <td><span class="status-${result.status.toLowerCase()}">${result.status}</span></td>
                     <td class="metric-value">${result.issues.join('; ')}</td>
+                    <td><button class="btn-recheck" id="recheck-btn-${index}" onclick="recheckRow(${index})">🔄 Recheck</button></td>
                 `;
                 
                 resultsBody.appendChild(row);
             });
+        }
+        
+        // Recheck a single row (specific URL + device)
+        async function recheckRow(index) {
+            const result = analysisResults[index];
+            if (!result) return;
+            
+            const apiKey = document.getElementById('apiKey').value.trim();
+            const btn = document.getElementById(`recheck-btn-${index}`);
+            const row = document.getElementById(`result-row-${index}`);
+            
+            // Show loading state on button
+            if (btn) {
+                btn.disabled = true;
+                btn.innerHTML = '<span class="recheck-spinner"></span> Checking...';
+            }
+            
+            // Highlight the row while checking
+            if (row) {
+                row.style.opacity = '0.6';
+            }
+            
+            try {
+                const newResult = await analyzeUrl(result.url, result.device, apiKey);
+                analysisResults[index] = newResult;
+            } catch (error) {
+                showError('Recheck failed: ' + error.message);
+            } finally {
+                // Re-render the full table so summary + all rows are in sync
+                displayResults();
+            }
         }
         
         // Get CSS class for score
